@@ -1,0 +1,8 @@
+name: kafka
+description: A Helm Chart for kafka
+version: 0.0.1
+apiVersion: v2
+keywords:
+  - kafka
+sources:
+home:

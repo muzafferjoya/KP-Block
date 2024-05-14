@@ -1,0 +1,8 @@
+name: es
+description: A Helm Chart for es
+version: 0.0.1
+apiVersion: v2
+keywords:
+  - es
+sources:
+home:
