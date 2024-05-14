@@ -1,2 +1,3 @@
 ```bash
-helm install <service-name> path -n <namespace>
+helm install <service-name> <service-path> -n <namespace>
+```
