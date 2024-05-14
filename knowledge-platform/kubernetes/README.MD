@@ -1,2 +1,3 @@
 ```bash
-helm install content content -n knowlg-api```
+helm install content content -n knowlg-api
+```
