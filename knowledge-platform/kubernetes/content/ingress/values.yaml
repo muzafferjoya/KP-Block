@@ -6,4 +6,5 @@ service:
   port: 9000
 
 ingress:
-  certificateARN: arn:aws:acm:ap-south-1:992382420084:certificate/317bee9d-d16b-40eb-abd9-ddc970e6e89f
+  certificateARN: arn:aws:acm:ap-south-1:992382420084:certificate/b9119d4c-88ae-47f1-9559-9b920f5ac1ea
+   

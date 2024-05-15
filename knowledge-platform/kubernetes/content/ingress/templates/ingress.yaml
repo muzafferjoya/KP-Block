@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: content.pratham-scp.tekdinext.com
+    - host: content-pratham-scp.tekdinext.com
       http:
         paths:
           - path: /
@@ -23,7 +23,7 @@ spec:
                 name: content-service
                 port:
                   number: 9000
-    - host: dial.pratham-scp.tekdinext.com
+    - host: dial-pratham-scp.tekdinext.com
       http:
         paths:
           - path: /
@@ -33,7 +33,7 @@ spec:
                 name: dial-service
                 port:
                   number: 9000
-    - host: search.pratham-scp.tekdinext.com
+    - host: search-pratham-scp.tekdinext.com
       http:
         paths:
           - path: /
@@ -43,7 +43,7 @@ spec:
                 name: search-service
                 port:
                   number: 9000
-    - host: taxonomy.pratham-scp.tekdinext.com
+    - host: taxonomy-pratham-scp.tekdinext.com
       http:
         paths:
           - path: /
