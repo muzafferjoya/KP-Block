@@ -36,6 +36,18 @@ spec:
             - containerPort: 9200
               hostPort: 9200
               protocol: TCP
+      affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: eks.amazonaws.com/nodegroup 
+               operator: In
+               values:
+                - large-nodes
+
+
+
       #     volumeMounts:
       #     - name: es-datas
       #       mountPath: /usr/share/elasticsearch/data

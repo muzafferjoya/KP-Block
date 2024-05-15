@@ -27,6 +27,15 @@ spec:
         - name: {{ .Chart.Name }}-xml-config
           configMap:
             name: {{ .Chart.Name }}-xml-config
+      affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: eks.amazonaws.com/nodegroup
+               operator: In
+               values:
+                - small-nodes
       containers:
       - name: {{ .Chart.Name }}
         image: "{{ .Values.repository }}:{{ .Values.image_tag }}"

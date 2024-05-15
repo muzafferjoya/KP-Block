@@ -1,0 +1,9 @@
+replicaCount: 1
+
+
+service:
+  type: NodePort
+  port: 9000
+
+ingress:
+  certificateARN: arn:aws:acm:ap-south-1:992382420084:certificate/317bee9d-d16b-40eb-abd9-ddc970e6e89f

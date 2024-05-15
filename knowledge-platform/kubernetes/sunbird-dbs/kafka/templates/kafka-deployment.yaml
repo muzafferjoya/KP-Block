@@ -42,3 +42,12 @@ spec:
         name: kafka-broker
         ports:
         - containerPort: 9092
+      affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: eks.amazonaws.com/nodegroup 
+               operator: In
+               values:
+                - large-nodes

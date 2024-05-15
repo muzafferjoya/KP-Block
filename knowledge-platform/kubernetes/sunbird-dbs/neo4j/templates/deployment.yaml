@@ -27,6 +27,15 @@ spec:
               name: bolt-port-1
             - containerPort: 8687
               name: bolt-port-2
+      affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: eks.amazonaws.com/nodegroup 
+               operator: In
+               values:
+                - large-nodes
           
 ---
 apiVersion: v1

@@ -18,6 +18,15 @@ spec:
           image: redis
           ports:
             - containerPort: {{ .Values.network.port }}
+      affinity:
+       nodeAffinity:
+         requiredDuringSchedulingIgnoredDuringExecution:
+           nodeSelectorTerms:
+           - matchExpressions:
+             - key: eks.amazonaws.com/nodegroup 
+               operator: In
+               values:
+                - large-nodes
 ---
 apiVersion: v1
 kind: Service

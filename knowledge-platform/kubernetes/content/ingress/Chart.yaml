@@ -1,0 +1,4 @@
+apiVersion: v2
+name: pratham-scp-ingress
+description: A Helm chart for deploying the Saral Ingress Object
+version: 0.1.0
